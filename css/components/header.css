@@ -1,0 +1,95 @@
+#header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  color: #fff;
+  min-height: 50vh;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#header img {
+  width: 250px;
+  border-radius: 50%;
+}
+
+.curriculo {
+  margin-bottom: auto;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+}
+
+.curriculo button {
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: 1rem;
+  background-color: #661c89;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.curriculo button:hover {
+  background-color: #280837;
+  transition: 0.8s all ease-in-out;
+}
+
+
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.me h1 {
+  font-size: 2.5rem;
+  line-height: 1.3;
+  font-weight: 600;
+  margin: 0;
+  max-width: 600px;
+}
+
+.me h1 span {
+  color: #f1c40f;
+}
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .header-image {
+    margin-top: 20px;
+  }
+  
+  .me h1 {
+    font-size: 2rem;
+  }
+  
+  .header-image img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .curriculo {
+    position: relative; 
+    bottom: auto;
+    left: auto;
+    transform: none;
+    margin-top: 20px; 
+    text-align: center; 
+  }
+}
